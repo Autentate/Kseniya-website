@@ -399,9 +399,10 @@ footer h2 {
     z-index: 10;
   }
   .burger.cross {
+    position: fixed;
     z-index: 5;
-    right: 6.5%;
-    top: 4%;
+    right: 26.5%;
+    top: 10%;
   }
   .burger.cross span {
     width: 39px;
@@ -456,12 +457,6 @@ footer h2 {
   footer {
     padding-top: 10px;
     flex-direction: column;
-  }
-
-  .burger.cross {
-    z-index: 5;
-    right: 10%;
-    top: 4%;
   }
 
 }
