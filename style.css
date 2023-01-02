@@ -230,7 +230,16 @@ main {
 .secondcolumn img,
 .thirdcolumn img {
     margin-bottom: 26px;
-    max-width: 32vw;
+    max-width: 100%;
+}
+
+.firstcolumn img {
+    padding-right: 26px;
+}
+
+
+.thirdcolumn img {
+    padding-left: 26px;
 }
 
 /* Footer */
@@ -291,7 +300,25 @@ footer h2 {
 }
 
 
+@media(max-width: 1730px) {
 
+    .firstcolumn img,
+    .secondcolumn img,
+    .thirdcolumn img {
+        margin-bottom: 26px;
+        max-width: 32vw;
+    }
+
+    .firstcolumn img {
+        padding-right: 0px;
+    }
+    
+    
+    .thirdcolumn img {
+        padding-left: 0px;
+    }
+
+}
 @media(max-width: 1280px) {
 
     header {
