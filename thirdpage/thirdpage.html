@@ -1,232 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../thirdpage/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../thirdpage/style.css" />
     <title>F.A.Q</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="wrapper">
-        <header>
-            <ul>
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="../secondpage/secondpage.html">Обо мне</a></li>
-                <li><a href="#">FAQ</a></li>
+      <header>
+        <ul>
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="../secondpage/secondpage.html">Обо мне</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <img src="../img/homepage/header/лого.svg" alt="Логотип" />
+        <ul>
+          <li><a href="../fourthpage/fourthpage.html">Цены</a></li>
+          <li><a href="../fifthpage/fifthpage.html">Отзывы</a></li>
+          <li><a href="../sixthpage/sixthpage.html">Контакты</a></li>
+        </ul>
+        <div onclick="burgerCross()" class="burger" id="burger">
+          <span></span> <span></span>
+        </div>
+        <div class="burger_open" id="burger_open">
+          <div class="burger_open_body">
+            <ul onclick="burgerLinks()">
+              <li>
+                <a id="burger_item" href="../index.html">Главная</a>
+              </li>
+              <li>
+                <a id="burger_item" href="../secondpage/secondpage.html">Обо мне</a>
+              </li>
+              <li>
+                <a id="burger_item" href="#">FAQ</a>
+              </li>
+              <li>
+                <a id="burger_item" href="../fourthpage/fourthpage.html">Цены</a>
+              </li>
+              <li>
+                <a id="burger_item" href="../fifthpage/fifthpage.html">Отзывы</a>
+              </li>
+              <li>
+                <a id="burger_item" href="../sixthpage/sixthpage.html">Контакты</a>
+              </li>
             </ul>
-            <img src="../img/homepage/header/лого.svg" alt="Логотип">
-            <ul>
-                <li><a href="../fourthpage/fourthpage.html">Цены</a></li>
-                <li><a href="../fifthpage/fifthpage.html">Отзывы</a></li>
-                <li><a href="../sixthpage/sixthpage.html">Контакты</a></li>
-            </ul>
-            <div class="burger">
-                <span></span>
-                <span></span>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h1>FAQ - часто задаваемые вопросы</h1>
+
+        <div class="main_inner">
+          <div class="main_inner_firstpost">
+            <div>
+              <h3>Подготовка к фотосессии</h3>
+              <h4>
+                Самое важное в подготовке - ваше хорошее настроение). <br />
+                Если необходимы подсказки по подбору наряда к месту <br />
+                локации съёмки или подбор собственно самой локации - я <br />
+                с радостью Вам помогу.
+              </h4>
             </div>
-        </header>
-        <main>
 
-            <h1>FAQ - часто задаваемые вопросы</h1>
+            <img src="../img/thirdpage/firstpost_img.svg" alt="" />
+          </div>
 
-            <div class="main_inner">
-                <div class="main_inner_firstpost">
+          <div class="main_inner_secondpost">
+            <img src="../img/thirdpage/secondpost_img.svg" alt="" />
 
-                    <div>
-                        <h3>Подготовка к фотосессии</h2>
-                        <h4>
-                            Самое важное в подготовке - ваше хорошее настроение). <br />
-                            Если необходимы подсказки по подбору наряда к месту <br />
-                            локации съёмки или подбор собственно самой локации - я <br />
-                            с радостью Вам помогу.
-                        </h4>
-                    </div>
-
-                    <img src="../img/thirdpage/firstpost_img.svg" alt="">
-                </div>
-
-                <div class="main_inner_secondpost"> 
-                    <img src="../img/thirdpage/secondpost_img.svg" alt="">
-
-                    <div>
-                        <h3>Фотостудия или природа?</h3>
-                        <h4>
-                            Такой вопрос я очень часто слышу от своих клиентов. <br />
-                            На самом деле все зависит от Вас).
-                        </h4>
-                        <h4>
-                            Выезд на природу, например, часто сопряжен с вопросом <br />
-                            «Как туда добраться?»…студии находятся в черте города, <br />
-                            имеют комфортные условия и даже предлагают аренду <br />
-                            нарядов.
-                        </h4>
-                        <h4>
-                            С детками удобно провести фотосессию в парке. <br />
-                            Естественные природные ландшафты придают особую <br />
-                            атмосферу фотосессии. 
-                        </h4>
-                    </div>
-                </div>
-
-                <div class="main_inner_thirdpost">
-
-                    <div>
-                        <h3>Как забронировать фотосессию?</h3>
-
-                        <h4>
-                            Бронь даты происходит после внесения предоплаты в <br />
-                            размере 10% от стоимости съёмки. <br />
-                            Оставшиеся 90% оплачиваются в день съёмки. 
-                        </h4>
-                        <h4>
-                            Конечно, до аванса мы согласовываем все необходимые <br />
-                            детали: цену, место, время, концепцию, бронируем <br />
-                            фотостудию, если она нужна.
-                        </h4>
-                    </div>
-
-                    <img src="../img/thirdpage/thirdpost_img.svg" alt="">
-                </div>
-
-                <h2>
-                    Какой вообще процесс заказа, подготовки, <br />
-                    съёмки?
-                </h2>
-
-                <div class="main_inner_fourthpost">
-
-                    <div>
-                        <h4>
-                            Вы оставляете заявку на фотосессию с помощью телефона <br />
-                            или мессенджеров соц.сетей указанных на сайте;
-                        </h4>
-                        <h4>
-                            Мы согласовываем все детали, цену, место, время, <br />
-                            концепцию;
-                        </h4>
-                        <h4>
-                            Бронируем и оплачиваем фотостудию, если она нужна <br />
-                            (оплата студии по правилам студии);
-                        </h4>
-                        <h4>
-                            Вы вносите аванс в размере 10% от стоимости съёмки;
-                        </h4>
-                        <h4>
-                            за день до съёмки дополнительно уточняем время и место <br />
-                            съёмки;
-                        </h4>
-                        <h4>
-                            вы получите ссылку на временное хранилище фотографий <br />
-                            FEX.NET в течение 5-ти дней после съёмки, где Вы отберете <br />
-                            20 фотографий для обработки и обязательно скачаете их <br />
-                            себе, потому как хранение файлов на ресурсе имеет <br />
-                            ограниченное количество дней;
-                        </h4>
-                        <h4>
-                            вы получите обработанные фото, в зависимости от съёмки, <br />
-                            в течение 1-2 месяцев.
-                        </h4>
-                    </div>
-                    
-                    <img src="../img/thirdpage/fourthpost_img.svg" alt="">
-                </div>
-
-                <div class="main_inner_fifthpost">
-                    <img src="../img/thirdpage/fifthpost_img.svg" alt="">
-
-                    <div>
-                        <h3>
-                            Почему при выборе фотосессии на улице <br />
-                            нужно фотографироваться на рассвете <br />
-                            или на закате? 
-                        </h3>
-
-                        <h4>
-                            Это не моя индивидуальная прихоть, это рекомендация, <br />
-                            которая даст максимально качественные кадры.
-                        </h4>
-                        <h4>
-                            Приведу ряд аргументов:
-                        </h4>
-                        <h4>
-                            Жёсткое солнце даёт некрасивые тени под <br />
-                            глазами, которые на фото будут выглядеть как <br />
-                            синяк;
-                        </h4>
-                        <h4>
-                            Закатное или рассветное солнце дает <br />
-                            необыкновенный свет и невероятно красивые <br />
-                            лучи мягкого освещения.
-                        </h4>
-                        <h4>
-                            Я работаю на качество и всегда говорю, что если <br />
-                            бы можно было просто нарисовать красивый кадр <br />
-                            - Вам бы не нужен был фотограф….
-                        </h4>
-                    </div>
-
-                </div>
-
-                <h2>Есть несколько видов фотосессий</h2>
-
-                <div class="main_inner_sixthpost">
-                    <div>
-                        <img src="../img/thirdpage/sixthpost_img_1.svg" alt="">
-                        <img src="../img/thirdpage/sixthpost_img_2.svg" alt="">
-                        <img src="../img/thirdpage/sixthpost_img_3.svg" alt="">
-                        <img src="../img/thirdpage/sixthpost_img_4.svg" alt="">
-                    </div>
-
-                    <div>
-                        <img src="../img/thirdpage/sixthpost_img_5.svg" alt="">
-                        <img src="../img/thirdpage/sixthpost_img_6.svg" alt="">
-                        <img src="../img/thirdpage/sixthpost_img_7.svg" alt="">
-                        <img src="../img/thirdpage/sixthpost_img_8.svg" alt="">
-                    </div>
-
-                    <h4>Ознакомится с ценами на услуги Вы можете в разделе <a href="#">«Цены»</a></h4>
-                </div>
-
-                <h2>Другие услуги</h2>
-
-                <div class="main_inner_seventhpost">
-
-                    <div>
-                        <h3>Можно ли заказать у вас фотокнигу?</h3>
-
-                        <h4>
-                            Да. Вы можете заказать у меня фотокнигу. <br />
-                            Вариантов фотокниг достаточно много, поэтому <br />
-                            более детальную информацию Вы можете <br />
-                            запросить у меня.
-                        </h4>
-                        <h4>
-                            Также доступно к заказу изготовление <span>холстов</span>, <br />
-                            дополнительную информацию Вы можете также <br />
-                            запросить у меня.
-                        </h4>
-                    </div>
-
-                    <img src="../img/thirdpage/seventhpost_img.svg" alt="">
-                </div>
+            <div>
+              <h3>Фотостудия или природа?</h3>
+              <h4>
+                Такой вопрос я очень часто слышу от своих клиентов. <br />
+                На самом деле все зависит от Вас).
+              </h4>
+              <h4>
+                Выезд на природу, например, часто сопряжен с вопросом <br />
+                «Как туда добраться?»…студии находятся в черте города, <br />
+                имеют комфортные условия и даже предлагают аренду <br />
+                нарядов.
+              </h4>
+              <h4>
+                С детками удобно провести фотосессию в парке. <br />
+                Естественные природные ландшафты придают особую <br />
+                атмосферу фотосессии.
+              </h4>
             </div>
-        </main>
-        <footer>
-            <ul class="footer_social-media">
-                <a href="#"><img src="../img/homepage/footer/instagram.svg" alt="Инстаграм"></a>
-                <a href="#"><img src="../img/homepage/footer/facebook.svg" alt="Фейсбук"></a>
-                <a href="#"><img src="../img/homepage/footer/telegram.svg" alt="Телеграм"></a>
-                <a href="https://mywed.com/ru/photographer/mysja/"><img src="../img/homepage/footer/mywed.svg" alt="mywed"></a>
-                
-            </ul>
-            <h2>
-                Семейный и свадебный фотограф <br />
-                Ксения Крестьянинова 
-            </h2>
-            <a href="tel:+380671654104" class="footer_number">+380671654104</a>
-        </footer>
+          </div>
+
+          <div class="main_inner_thirdpost">
+            <div>
+              <h3>Как забронировать фотосессию?</h3>
+
+              <h4>
+                Бронь даты происходит после внесения предоплаты в <br />
+                размере 10% от стоимости съёмки. <br />
+                Оставшиеся 90% оплачиваются в день съёмки.
+              </h4>
+              <h4>
+                Конечно, до аванса мы согласовываем все необходимые <br />
+                детали: цену, место, время, концепцию, бронируем <br />
+                фотостудию, если она нужна.
+              </h4>
+            </div>
+
+            <img src="../img/thirdpage/thirdpost_img.svg" alt="" />
+          </div>
+
+          <h2>
+            Какой вообще процесс заказа, подготовки, <br />
+            съёмки?
+          </h2>
+
+          <div class="main_inner_fourthpost">
+            <div>
+              <h4>
+                Вы оставляете заявку на фотосессию с помощью телефона <br />
+                или мессенджеров соц.сетей указанных на сайте;
+              </h4>
+              <h4>
+                Мы согласовываем все детали, цену, место, время, <br />
+                концепцию;
+              </h4>
+              <h4>
+                Бронируем и оплачиваем фотостудию, если она нужна <br />
+                (оплата студии по правилам студии);
+              </h4>
+              <h4>Вы вносите аванс в размере 10% от стоимости съёмки;</h4>
+              <h4>
+                за день до съёмки дополнительно уточняем время и место <br />
+                съёмки;
+              </h4>
+              <h4>
+                вы получите ссылку на временное хранилище фотографий <br />
+                FEX.NET в течение 5-ти дней после съёмки, где Вы отберете <br />
+                20 фотографий для обработки и обязательно скачаете их <br />
+                себе, потому как хранение файлов на ресурсе имеет <br />
+                ограниченное количество дней;
+              </h4>
+              <h4>
+                вы получите обработанные фото, в зависимости от съёмки, <br />
+                в течение 1-2 месяцев.
+              </h4>
+            </div>
+
+            <img src="../img/thirdpage/fourthpost_img.svg" alt="" />
+          </div>
+
+          <div class="main_inner_fifthpost">
+            <img src="../img/thirdpage/fifthpost_img.svg" alt="" />
+
+            <div>
+              <h3>
+                Почему при выборе фотосессии на улице <br />
+                нужно фотографироваться на рассвете <br />
+                или на закате?
+              </h3>
+
+              <h4>
+                Это не моя индивидуальная прихоть, это рекомендация, <br />
+                которая даст максимально качественные кадры.
+              </h4>
+              <h4>Приведу ряд аргументов:</h4>
+              <h4>
+                Жёсткое солнце даёт некрасивые тени под <br />
+                глазами, которые на фото будут выглядеть как <br />
+                синяк;
+              </h4>
+              <h4>
+                Закатное или рассветное солнце дает <br />
+                необыкновенный свет и невероятно красивые <br />
+                лучи мягкого освещения.
+              </h4>
+              <h4>
+                Я работаю на качество и всегда говорю, что если <br />
+                бы можно было просто нарисовать красивый кадр <br />
+                - Вам бы не нужен был фотограф….
+              </h4>
+            </div>
+          </div>
+
+          <h2>Есть несколько видов фотосессий</h2>
+
+          <div class="main_inner_sixthpost">
+            <div>
+              <img src="../img/thirdpage/sixthpost_img_1.svg" alt="" />
+              <img src="../img/thirdpage/sixthpost_img_2.svg" alt="" />
+              <img src="../img/thirdpage/sixthpost_img_3.svg" alt="" />
+              <img src="../img/thirdpage/sixthpost_img_4.svg" alt="" />
+            </div>
+
+            <div>
+              <img src="../img/thirdpage/sixthpost_img_5.svg" alt="" />
+              <img src="../img/thirdpage/sixthpost_img_6.svg" alt="" />
+              <img src="../img/thirdpage/sixthpost_img_7.svg" alt="" />
+              <img src="../img/thirdpage/sixthpost_img_8.svg" alt="" />
+            </div>
+
+            <h4>
+              Ознакомится с ценами на услуги Вы можете в разделе
+              <a href="#">«Цены»</a>
+            </h4>
+          </div>
+
+          <h2>Другие услуги</h2>
+
+          <div class="main_inner_seventhpost">
+            <div>
+              <h3>Можно ли заказать у вас фотокнигу?</h3>
+
+              <h4>
+                Да. Вы можете заказать у меня фотокнигу. <br />
+                Вариантов фотокниг достаточно много, поэтому <br />
+                более детальную информацию Вы можете <br />
+                запросить у меня.
+              </h4>
+              <h4>
+                Также доступно к заказу изготовление <span>холстов</span>,
+                <br />
+                дополнительную информацию Вы можете также <br />
+                запросить у меня.
+              </h4>
+            </div>
+
+            <img src="../img/thirdpage/seventhpost_img.svg" alt="" />
+          </div>
+        </div>
+      </main>
+      <footer>
+        <ul class="footer_social-media">
+          <a href="https://instagram.com/photograf_dndz?igshid=YmMyMTA2M2Y=">
+            <img src="../img/homepage/footer/instagram.svg" alt="Инстаграм" />
+          </a>
+          <a href="https://www.facebook.com/groups/1374235009570518/?ref=share">
+            <img src="../img/homepage/footer/facebook.svg" alt="Фейсбук" />
+          </a>
+          <a href="https://t.me/ksyphotograph">
+            <img src="../img/homepage/footer/telegram.svg" alt="Телеграм" />
+          </a>
+          <a href="https://mywed.com/ru/photographer/mysja/">
+            <img src="../img/homepage/footer/mywed.svg" alt="mywed" />
+          </a>
+        </ul>
+        <h2>
+          Семейный и свадебный фотограф <br />
+          Ксения Крестьянинова
+        </h2>
+        <a href="tel:+380671654104" class="footer_number">+380671654104</a>
+      </footer>
     </div>
-</body>
+
+
+    <script src="../main.js"></script>
+  </body>
 </html>

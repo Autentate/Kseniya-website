@@ -22,9 +22,21 @@
                 <li><a href="./fifthpage/fifthpage.html">Отзывы</a></li>
                 <li><a href="./sixthpage/sixthpage.html">Контакты</a></li>
             </ul>
-            <div class="burger">
+            <div onclick="burgerCross()" class="burger" id="burger">
                 <span></span>
                 <span></span>
+            </div>
+            <div class="burger_open" id="burger_open">
+                <div class="burger_open_body">
+                    <ul onclick="burgerLinks()">
+                        <li><a id="burger_item" href="#">Главная</a></li>
+                        <li><a id="burger_item" href="./secondpage/secondpage.html">Обо мне</a></li>
+                        <li><a id="burger_item" href="./thirdpage/thirdpage.html">FAQ</a></li>
+                        <li><a id="burger_item" href="./fourthpage/fourthpage.html">Цены</a></li>
+                        <li><a id="burger_item" href="./fifthpage/fifthpage.html">Отзывы</a></li>
+                        <li><a id="burger_item" href="./sixthpage/sixthpage.html">Контакты</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main>
@@ -77,11 +89,18 @@
         </main>
         <footer>
             <ul class="footer_social-media">
-                <a href="#"><img src="./img/homepage/footer/instagram.svg" alt="Инстаграм"></a>
-                <a href="#"><img src="./img/homepage/footer/facebook.svg" alt="Фейсбук"></a>
-                <a href="#"><img src="./img/homepage/footer/telegram.svg" alt="Телеграм"></a>
-                <a href="https://mywed.com/ru/photographer/mysja/"><img src="./img/homepage/footer/mywed.svg" alt="mywed"></a>
-                
+                <a href="https://instagram.com/photograf_dndz?igshid=YmMyMTA2M2Y=">
+                    <img src="../img/homepage/footer/instagram.svg" alt="Инстаграм">
+                </a>
+                <a href="https://www.facebook.com/groups/1374235009570518/?ref=share">
+                    <img src="../img/homepage/footer/facebook.svg" alt="Фейсбук">
+                </a>
+                <a href="https://t.me/ksyphotograph">
+                    <img src="../img/homepage/footer/telegram.svg" alt="Телеграм">
+                </a>
+                <a href="https://mywed.com/ru/photographer/mysja/">
+                    <img src="../img/homepage/footer/mywed.svg" alt="mywed">
+                </a>
             </ul>
             <h2>
                 Семейный и свадебный фотограф <br/>

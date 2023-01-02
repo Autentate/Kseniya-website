@@ -181,6 +181,24 @@ header ul {
     gap: 60px;
 }
 
+header li {position: relative;}
+
+header li::after{
+    content:'';
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: block;
+    transition: 0.3s;
+    transform: translate(-50%,-50%) scaleX(0);
+}
+
+header li:hover::after {
+    transform: translate(-50%,-50%) scaleX(1);
+}
 
 header a {
     text-decoration: none;
@@ -192,8 +210,9 @@ header a {
     color: #000;
 }
 
-.burger {
+.burger_open {
     display: none;
+    transition: all .3s linear;
 }
 
 
@@ -281,13 +300,14 @@ footer h2 {
     }
 
     .burger {
-        position: relative;
+        position: absolute;
         right: 80px;
         margin-right: 0;
         display: block;
     }
 
     .burger span {
+        transition: .3s linear;
         position: absolute;
         width: 39px;
         height: 2px;
@@ -306,7 +326,70 @@ footer h2 {
         width: 30px;
         height: 2px;
         background-color: #000;
+        z-index: 999;
     }
+
+
+    /* Burger active properties */
+
+    header img {
+        z-index: 10;
+    }
+
+
+    .burger.cross {
+        z-index: 5;
+        right: 6.5%;
+        top: 1.2%;
+    }
+    .burger.cross span {
+        width: 39px;
+    }
+    .burger.cross span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    .burger.cross span:nth-child(2) {
+        top: 0;
+        margin-top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .burger.cross span::after {
+        display: none;
+    }
+
+
+    .burger_open.active {
+        min-width: 50%;
+        min-height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 4;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .burger_open_body {
+    }
+
+    .burger_open_body ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger_open_body li {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+    }
+
 }
 @media(max-width: 780px) {
 
